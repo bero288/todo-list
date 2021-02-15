@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="app.js" defer></script>
+    <title>todo list app</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="capitalize">bero's to do list</h1>
+    </header>
+    <form>
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todos">
+          <option value="all" class="capitalize">all</option>
+          <option value="completed" class="capitalize">completed</option>
+          <option value="uncompleted" class="capitalize">uncompleted</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+  </body>
+</html>
